@@ -30,8 +30,7 @@ jobs:
         buildozer android debug
 
     - name: Upload APK artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4   # ✅ यहाँ बदलाव किया
       with:
         name: class-notes-apk
         path: bin/*.apk
-
